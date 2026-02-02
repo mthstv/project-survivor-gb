@@ -4,6 +4,10 @@
     {
       "id": "fade_style",
       "value": 0
+    },
+    {
+      "id": "shooter_scroll_speed",
+      "value": 12
     }
   ]
 }

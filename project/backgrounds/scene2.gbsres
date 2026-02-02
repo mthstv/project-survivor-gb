@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "9b5b981c-0995-46ed-afd6-0a09278af7c2",
+  "name": "scene2",
+  "symbol": "bg_scene2",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "scene2.png",
+  "tileColors": "",
+  "autoColor": false
+}
