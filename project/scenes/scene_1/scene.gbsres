@@ -1,0 +1,90 @@
+{
+  "_resourceType": "scene",
+  "id": "98c4dba1-67fa-449d-b86b-a2fe691968d7",
+  "_index": 0,
+  "name": "Scene 1",
+  "backgroundId": "8a0bf7d7-2a9a-40ea-b015-8d4df52370f2",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0f15+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_1",
+  "x": 144,
+  "y": 248,
+  "script": [],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operator": "<=",
+        "distance": {
+          "type": "number",
+          "value": 4
+        },
+        "otherActorId": "93aa4aa1-eb02-49c2-872b-4ccc7ad9f9a7",
+        "__collapseElse": true,
+        "__collapse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "matou",
+              "x": 1,
+              "y": 1,
+              "location": "background",
+              "__collapse": true
+            },
+            "id": "ce532860-e2cc-4229-9916-76a2d675ceba"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "93aa4aa1-eb02-49c2-872b-4ccc7ad9f9a7",
+              "__collapse": true
+            },
+            "id": "3e5592fe-38bc-4791-8094-69b7a106d317"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "6dc40ebe-0880-4a41-94e8-ded69f11cb42",
+              "__collapse": true
+            },
+            "id": "b8efbc1c-e8b0-4d8e-a888-4ea4118a36f9"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.1,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "1218093f-cd45-4858-9eab-0e7cbac351b6"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "6dc40ebe-0880-4a41-94e8-ded69f11cb42",
+              "__collapse": true
+            },
+            "id": "3d59d6e0-2082-415d-bb54-5e26d9015670"
+          }
+        ],
+        "false": []
+      },
+      "id": "4648f2cd-bd50-4260-a5cc-dfb0de9a3644"
+    }
+  ],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "57ac4c14-a78e-4622-aae9-d7faab8c4365",
+  "autoFadeEventCollapse": false
+}

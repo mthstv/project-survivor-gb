@@ -1,0 +1,79 @@
+{
+  "_resourceType": "actor",
+  "id": "93aa4aa1-eb02-49c2-872b-4ccc7ad9f9a7",
+  "name": "Enemy",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e909fa92-ae18-4526-981e-f8ee2c2a9836",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_0",
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "property",
+          "target": "player",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "property",
+          "target": "player",
+          "property": "ypos"
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__comment": false,
+        "__collapse": true
+      },
+      "id": "2d2aa004-50d9-44c8-b421-1030e14e5758"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+      "args": {
+        "actorId": "$self$",
+        "operator": "<=",
+        "distance": {
+          "type": "number",
+          "value": 16
+        },
+        "otherActorId": "player",
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "matou",
+              "x": 1,
+              "y": 1,
+              "location": "background"
+            },
+            "id": "25465c64-c4c4-4c4d-9933-b29032b9be8c"
+          }
+        ],
+        "false": []
+      },
+      "id": "74af0caf-a58e-46e0-be9c-70fd7a148a39"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 2,
+  "y": 15,
+  "_index": 0
+}
