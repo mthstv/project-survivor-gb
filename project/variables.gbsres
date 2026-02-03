@@ -5,6 +5,11 @@
       "id": "0",
       "name": "Player health",
       "symbol": "var_player_health"
+    },
+    {
+      "id": "1",
+      "name": "coins",
+      "symbol": "var_coins_0"
     }
   ]
 }

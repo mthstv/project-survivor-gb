@@ -24,7 +24,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -32,7 +32,7 @@
             "command": "EVENT_LAUNCH_PROJECTILE",
             "args": {
               "__section": "projectile",
-              "spriteSheetId": "6aaf48a6-2203-4861-bb43-e7407f402c63",
+              "spriteSheetId": "7437bdc1-be4e-490e-a585-b00415ba8e69",
               "spriteStateId": "",
               "actorId": "$self$",
               "x": 0,
@@ -43,12 +43,12 @@
               "angle": 0,
               "angleVariable": "L0",
               "targetActorId": "$self$",
-              "initialOffset": 0,
-              "speed": 2,
-              "animSpeed": 15,
-              "lifeTime": 1,
+              "initialOffset": 16,
+              "speed": 0,
+              "animSpeed": 255,
+              "lifeTime": 0.15,
               "loopAnim": false,
-              "destroyOnHit": true,
+              "destroyOnHit": false,
               "collisionGroup": "2",
               "collisionMask": [
                 "2"
@@ -65,7 +65,7 @@
       "command": "EVENT_SET_INPUT_SCRIPT",
       "args": {
         "input": [
-          "b"
+          "select"
         ],
         "override": true,
         "__scriptTabs": "press",
@@ -141,6 +141,19 @@
         ]
       },
       "id": "4fc2b400-4de1-497c-99bb-edc20e335ff9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": false,
+        "__comment": true
+      },
+      "id": "fb0534d3-3de7-4015-894a-4f33507adee4"
     }
   ],
   "playerHit1Script": [],
@@ -163,7 +176,25 @@
       "id": "c0ced9a8-4c88-4d30-861e-30b371998fad"
     }
   ],
-  "playerHit3Script": [],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "1"
+      },
+      "id": "533eb18b-829e-4a26-92c7-7b4ee10ad14e"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "$$01$",
+        "x": 1,
+        "y": 1,
+        "location": "background"
+      },
+      "id": "3fb48523-bffd-4d94-b1ea-131714fa6acd"
+    }
+  ],
   "playerSpriteSheetId": "57ac4c14-a78e-4622-aae9-d7faab8c4365",
-  "autoFadeEventCollapse": false
+  "autoFadeEventCollapse": true
 }

@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "93aa4aa1-eb02-49c2-872b-4ccc7ad9f9a7",
+  "id": "cf5e238d-e3be-43f9-b627-05f8d3f1239d",
   "name": "Enemy",
   "frame": 0,
   "animate": false,
@@ -14,16 +14,85 @@
   "persistent": false,
   "collisionGroup": "2",
   "prefabScriptOverrides": {},
-  "symbol": "actor_0",
+  "symbol": "actor_1",
   "script": [],
   "startScript": [
     {
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
         "actorId": "$self$",
+        "__comment": true,
+        "__collapse": true
+      },
+      "id": "2576b943-4433-4ba7-a90b-8e9986eef547"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "rnd",
+          "value": {
+            "type": "number",
+            "value": 15
+          }
+        },
+        "y": {
+          "type": "rnd",
+          "value": {
+            "type": "number",
+            "value": 15
+          }
+        },
+        "__collapse": false,
         "__comment": true
       },
-      "id": "7cf2972a-9d88-4346-8292-bfa90ae8cbda"
+      "id": "f66b520f-e282-4c7b-9e08-d32f31ac5d4a"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 2,
+        "frames": 30,
+        "__scriptTabs": "end",
+        "__comment": false,
+        "__collapse": false
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "rnd",
+                "value": {
+                  "type": "number",
+                  "value": 18
+                }
+              },
+              "y": {
+                "type": "rnd",
+                "value": {
+                  "type": "number",
+                  "value": 17
+                }
+              },
+              "__collapse": false
+            },
+            "id": "f9e02b2e-228c-4bea-8b39-fafd9ed50f91"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "eacb7abc-5d16-41ea-bb49-710cab459e01"
+          }
+        ]
+      },
+      "id": "46bf36a5-bce4-4e85-8228-6e9f66dbe73d"
     }
   ],
   "updateScript": [
@@ -46,7 +115,7 @@
         "__comment": false,
         "__collapse": false
       },
-      "id": "2d2aa004-50d9-44c8-b421-1030e14e5758"
+      "id": "06183009-5de8-46e2-943a-906cbbfc6c82"
     }
   ],
   "hit1Script": [],
@@ -65,18 +134,48 @@
           "target": "$self$",
           "property": "ypos"
         },
-        "__collapse": true
+        "__collapse": true,
+        "__comment": true
       },
-      "id": "9d532cd2-2cec-473f-b33d-c389059c3c4f"
+      "id": "f7cb29bd-5a61-4d63-84e7-45641bffa27c"
     },
     {
       "command": "EVENT_ACTOR_ACTIVATE",
       "args": {
         "actorId": "8c35a9a3-0427-4247-859b-da45c587427b",
         "__collapse": true,
-        "__comment": false
+        "__comment": true
       },
-      "id": "f5d4ffd9-f51a-46d2-9948-8c8bcc344a97"
+      "id": "0a201531-1b59-48ab-8a98-491e46f61d68"
+    },
+    {
+      "command": "EVENT_LAUNCH_PROJECTILE",
+      "args": {
+        "__section": "projectile",
+        "spriteSheetId": "6726a1a5-b070-4330-889f-6900ee6e5dda",
+        "spriteStateId": "",
+        "actorId": "$self$",
+        "x": 0,
+        "y": 0,
+        "directionType": "direction",
+        "otherActorId": "$self$",
+        "direction": "right",
+        "angle": 0,
+        "angleVariable": "L0",
+        "targetActorId": "$self$",
+        "initialOffset": 0,
+        "speed": 0,
+        "animSpeed": 255,
+        "lifeTime": 4,
+        "loopAnim": false,
+        "destroyOnHit": true,
+        "collisionGroup": "3",
+        "collisionMask": [
+          "player"
+        ],
+        "__collapse": true
+      },
+      "id": "e3b2856d-d91e-459f-96cc-b018821065eb"
     },
     {
       "command": "EVENT_ACTOR_DEACTIVATE",
@@ -84,7 +183,7 @@
         "actorId": "$self$",
         "__collapse": true
       },
-      "id": "327d906a-114d-417f-b81f-e585132844b9"
+      "id": "b3167825-bb5f-4010-8958-ff6ec8e340c4"
     }
   ],
   "hit3Script": [],
