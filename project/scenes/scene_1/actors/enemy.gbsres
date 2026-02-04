@@ -57,10 +57,17 @@
         "frames": 30,
         "__scriptTabs": "end",
         "__comment": false,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "script": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "b771a2ab-fdd0-44d3-bcf5-2700ffba658e"
+          },
           {
             "command": "EVENT_ACTOR_SET_POSITION",
             "args": {
@@ -84,11 +91,50 @@
             "id": "f9e02b2e-228c-4bea-8b39-fafd9ed50f91"
           },
           {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "68be7838-9ae2-42ff-a90b-5189beaf16e2",
+              "x": {
+                "type": "property",
+                "target": "$self$",
+                "property": "xpos"
+              },
+              "y": {
+                "type": "property",
+                "target": "$self$",
+                "property": "ypos"
+              }
+            },
+            "id": "29fa174e-9bbb-4ec8-b3f4-47a6ec5bc83f"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "68be7838-9ae2-42ff-a90b-5189beaf16e2"
+            },
+            "id": "8c64a4bc-5a4c-4275-86ae-9cf9278c3845"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "75361d05-8244-4492-bb18-e3a7e7818617"
+          },
+          {
             "command": "EVENT_ACTOR_ACTIVATE",
             "args": {
               "actorId": "$self$"
             },
             "id": "eacb7abc-5d16-41ea-bb49-710cab459e01"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "68be7838-9ae2-42ff-a90b-5189beaf16e2"
+            },
+            "id": "d9cd1885-a2f2-437b-91ad-e7c411846c14"
           }
         ]
       },
@@ -181,7 +227,7 @@
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
         "actorId": "$self$",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "b3167825-bb5f-4010-8958-ff6ec8e340c4"
     }

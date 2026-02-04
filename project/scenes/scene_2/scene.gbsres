@@ -37,7 +37,8 @@
         "closeWhen": "key",
         "closeButton": "a",
         "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "closeDelayFrames": 30,
+        "__collapse": true
       },
       "id": "799453da-73fc-4ad6-91f0-294c09a7180b"
     },
@@ -48,7 +49,8 @@
           "select"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -72,6 +74,16 @@
         ]
       },
       "id": "d43927a9-3c39-4ead-8b01-b85eb0f1afb2"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "$$01$",
+        "x": 16,
+        "y": 16,
+        "location": "background"
+      },
+      "id": "9cc168b6-a669-47e5-b76d-36781fad7bad"
     }
   ],
   "playerHit1Script": [],

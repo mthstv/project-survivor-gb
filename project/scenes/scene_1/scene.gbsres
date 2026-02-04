@@ -150,8 +150,8 @@
           "type": "number",
           "value": 0
         },
-        "__collapse": false,
-        "__comment": true
+        "__collapse": true,
+        "__comment": false
       },
       "id": "fb0534d3-3de7-4015-894a-4f33507adee4"
     }
