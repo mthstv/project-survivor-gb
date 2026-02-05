@@ -8,7 +8,11 @@
   "width": 20,
   "height": 18,
   "type": "ADVENTURE",
-  "paletteIds": [],
+  "paletteIds": [
+    "",
+    null,
+    ""
+  ],
   "spritePaletteIds": [],
   "collisions": "0f15+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+",
   "autoFadeSpeed": 1,
@@ -24,7 +28,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -44,9 +48,9 @@
               "angleVariable": "L0",
               "targetActorId": "$self$",
               "initialOffset": 16,
-              "speed": 0,
+              "speed": 0.25,
               "animSpeed": 255,
-              "lifeTime": 0.15,
+              "lifeTime": 0.2,
               "loopAnim": false,
               "destroyOnHit": false,
               "collisionGroup": "2",
@@ -154,6 +158,58 @@
         "__comment": false
       },
       "id": "fb0534d3-3de7-4015-894a-4f33507adee4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 3
+        },
+        "__collapse": true
+      },
+      "id": "c3ab4002-aebd-4c41-ab10-e389d4f7edab"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": false,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 2
+            },
+            "id": "8828abaa-93d5-4348-a604-afc869fda677"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.2,
+              "frames": 30
+            },
+            "id": "06668280-c3af-4ea9-830c-15e1ec9f8553"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 1
+            },
+            "id": "794af731-f4c9-403c-be0c-3b3d1f1bc6d2"
+          }
+        ]
+      },
+      "id": "39f680be-1944-4f72-9683-01e631de54c2"
     }
   ],
   "playerHit1Script": [],
@@ -171,7 +227,8 @@
           "value": 17
         },
         "direction": "up",
-        "fadeSpeed": "2"
+        "fadeSpeed": "2",
+        "__comment": true
       },
       "id": "c0ced9a8-4c88-4d30-861e-30b371998fad"
     }
@@ -189,7 +246,7 @@
       "args": {
         "text": "$$01$",
         "x": 1,
-        "y": 1,
+        "y": 2,
         "location": "background"
       },
       "id": "3fb48523-bffd-4d94-b1ea-131714fa6acd"

@@ -10,7 +10,7 @@
   "sgbEnabled": false,
   "customHead": "",
   "defaultBackgroundPaletteIds": [
-    "dmg",
+    "default-bg-1",
     "default-bg-2",
     "default-bg-3",
     "default-bg-4",
@@ -20,7 +20,7 @@
     "default-ui"
   ],
   "defaultSpritePaletteIds": [
-    "dmg",
+    "default-bg-1",
     "default-sprite",
     "default-sprite",
     "default-sprite",

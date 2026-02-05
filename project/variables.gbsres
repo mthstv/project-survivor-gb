@@ -3,8 +3,8 @@
   "variables": [
     {
       "id": "0",
-      "name": "Player health",
-      "symbol": "var_player_health"
+      "name": "playerHealth",
+      "symbol": "var_playerhealth"
     },
     {
       "id": "1",
