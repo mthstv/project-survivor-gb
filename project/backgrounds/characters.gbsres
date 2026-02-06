@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "d2e28895-b6e0-4fac-8aca-0f4aa76b0d93",
+  "name": "characters",
+  "symbol": "bg_characters",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "characters.png",
+  "tileColors": ""
+}

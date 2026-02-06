@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "8a0bf7d7-2a9a-40ea-b015-8d4df52370f2",
+  "name": "dungeon",
+  "symbol": "bg_scene1",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "dungeon.png",
+  "tileColors": "00168+",
+  "autoColor": false
+}

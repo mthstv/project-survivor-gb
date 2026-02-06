@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "923ccdc1-7b48-4890-96b3-72bc11cb8072",
+  "name": "intro",
+  "symbol": "bg_scene1_extended",
+  "width": 20,
+  "height": 36,
+  "imageWidth": 160,
+  "imageHeight": 288,
+  "filename": "intro.png",
+  "tileColors": "012d0+",
+  "autoColor": false
+}

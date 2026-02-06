@@ -10,6 +10,11 @@
       "id": "1",
       "name": "coins",
       "symbol": "var_coins_0"
+    },
+    {
+      "id": "2",
+      "name": "playerSelected",
+      "symbol": "var_playerselected"
     }
   ]
 }

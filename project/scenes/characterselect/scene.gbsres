@@ -1,0 +1,172 @@
+{
+  "_resourceType": "scene",
+  "id": "6b4d1768-1588-4e71-aa4e-26249cb4f16b",
+  "_index": 3,
+  "name": "CharacterSelect",
+  "backgroundId": "d2e28895-b6e0-4fac-8aca-0f4aa76b0d93",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_4",
+  "x": 232,
+  "y": 392,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__comment": false,
+        "__collapse": true
+      },
+      "id": "52726e51-9ae1-4450-b75f-98dbcdd21aa0"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "number",
+          "value": 2
+        },
+        "__collapse": true
+      },
+      "id": "4cdb787e-c486-465e-b8e6-1bd19b245f07"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "2"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 4
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "2"
+                  },
+                  "id": "6f2f1256-843a-449d-b10c-97aadbad0f7d"
+                }
+              ],
+              "false": []
+            },
+            "id": "ac32b882-2135-41d7-b24f-dce63ad6e42a"
+          }
+        ]
+      },
+      "id": "7ac868d1-a648-4865-bc1a-790fea7ad4df"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "2"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_DEC_VALUE",
+                  "args": {
+                    "variable": "2"
+                  },
+                  "id": "0b550e2c-4a3f-4101-9cc5-f7764e24ec68"
+                }
+              ],
+              "false": []
+            },
+            "id": "d950644b-c8fd-48ea-bdcb-a405ec981c3d"
+          }
+        ]
+      },
+      "id": "4a28bfba-fbaf-4ebc-803d-f1b0a812f1fd"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "c62ae540-7e86-4c99-a748-0fbf8e7edea5",
+              "x": {
+                "type": "number",
+                "value": 4
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "direction": "down",
+              "fadeSpeed": "2"
+            },
+            "id": "f673ecce-92fe-4651-b423-5d92c55d3aae"
+          }
+        ]
+      },
+      "id": "9688bb70-ad4d-42b9-b1ea-cabc061375ed"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": true
+}
