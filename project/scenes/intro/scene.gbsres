@@ -19,7 +19,8 @@
     {
       "command": "EVENT_ACTOR_HIDE",
       "args": {
-        "actorId": "$self$"
+        "actorId": "$self$",
+        "__collapse": true
       },
       "id": "da81e53d-794b-4973-8f19-4cdb40e3186a"
     },
@@ -60,10 +61,10 @@
           {
             "command": "EVENT_SWITCH_SCENE",
             "args": {
-              "sceneId": "98c4dba1-67fa-449d-b86b-a2fe691968d7",
+              "sceneId": "c62ae540-7e86-4c99-a748-0fbf8e7edea5",
               "x": {
                 "type": "number",
-                "value": 9
+                "value": 4
               },
               "y": {
                 "type": "number",
@@ -77,10 +78,23 @@
         ]
       },
       "id": "2fed4e7f-2583-4102-8fc6-81d9e0e3540d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "number",
+          "value": 2
+        },
+        "__collapse": true
+      },
+      "id": "c458c061-2035-454c-8183-eb05773249be"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "autoFadeEventCollapse": true
+  "autoFadeEventCollapse": true,
+  "playerSpriteSheetId": "1d056388-dde9-4112-a643-7ee293826e38"
 }

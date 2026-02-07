@@ -15,6 +15,11 @@
       "id": "2",
       "name": "playerSelected",
       "symbol": "var_playerselected"
+    },
+    {
+      "id": "3",
+      "name": "bruteCombo",
+      "symbol": "var_brutecombo"
     }
   ]
 }

@@ -38,7 +38,8 @@
         "closeButton": "a",
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30,
-        "__collapse": true
+        "__collapse": true,
+        "__comment": true
       },
       "id": "799453da-73fc-4ad6-91f0-294c09a7180b"
     },
@@ -51,7 +52,7 @@
         "override": true,
         "__scriptTabs": "press",
         "__collapse": true,
-        "__comment": true
+        "__comment": false
       },
       "children": {
         "true": [

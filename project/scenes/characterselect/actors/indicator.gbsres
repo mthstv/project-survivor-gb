@@ -56,7 +56,7 @@
         "__collapseCase15": false,
         "value15": 16,
         "__collapseElse": true,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true0": [
