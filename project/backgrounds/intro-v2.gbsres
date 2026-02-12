@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "ff323e55-e365-4396-ad88-d7dab433f7b0",
+  "name": "intro-v2",
+  "symbol": "bg_intro_copia",
+  "width": 20,
+  "height": 36,
+  "imageWidth": 160,
+  "imageHeight": 288,
+  "filename": "intro-v2.png",
+  "tileColors": "012d0+",
+  "autoColor": false
+}

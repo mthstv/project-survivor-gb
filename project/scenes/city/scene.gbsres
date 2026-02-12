@@ -38,7 +38,7 @@
         "closeButton": "a",
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30,
-        "__collapse": true,
+        "__collapse": false,
         "__comment": true
       },
       "id": "799453da-73fc-4ad6-91f0-294c09a7180b"
@@ -83,7 +83,8 @@
         "text": "$$01$",
         "x": 16,
         "y": 16,
-        "location": "background"
+        "location": "background",
+        "__collapse": true
       },
       "id": "9cc168b6-a669-47e5-b76d-36781fad7bad"
     }
